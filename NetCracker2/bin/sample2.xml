@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+	<product id="101">
+		<name>Marker</name>
+		<price>25</price>
+		<qty>10</qty>
+	</product>
+	<product id="102">
+		<name>Board</name>
+		<price>1200</price>
+		<qty>4</qty>
+	</product>
+</products>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Products>
+    <product id="1000">
+        <name>Laptop</name>
+        <quantity>20</quantity>
+        <price>35000</price>
+    </product>
+    <product id="1001">
+        <name>LED</name>
+        <quantity>10</quantity>
+        <price>4000</price>
+    </product>
+</Products>

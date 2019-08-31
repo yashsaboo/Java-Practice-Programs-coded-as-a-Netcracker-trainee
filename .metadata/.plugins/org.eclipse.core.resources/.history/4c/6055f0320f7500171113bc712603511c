@@ -1,0 +1,42 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.StringTokenizer;
+
+public class KuchBhiNaam {
+
+	public static void main(String args[]) throws Exception {
+		try {
+			String strFile = "src/CIVIL.csv";
+
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(new FileReader(strFile));
+			String strLine = "";
+			StringTokenizer st = null;
+			int tokenNumber = 0;
+
+			while ((strLine = br.readLine()) != null) {
+				st = new StringTokenizer(strLine, ",");
+
+				while (st.hasMoreTokens()) {
+					tokenNumber++;
+					if (tokenNumber == 1)
+						System.out.println("Material :" + st.nextToken());
+					if (tokenNumber == 2)
+						System.out.println("Unit :" + st.nextToken());
+					if (tokenNumber == 3)
+						System.out.println("Rate :" + st.nextToken());
+					if (tokenNumber == 4)
+						System.out.println("Max :" + st.nextToken());
+					if (tokenNumber == 3)
+						System.out.println("% :" + st.nextToken());
+				}
+				tokenNumber = 0;
+			}
+
+		} catch (Exception e) {
+			System.out.println("Exception while reading the file : " + e);
+		}
+
+	}
+
+}

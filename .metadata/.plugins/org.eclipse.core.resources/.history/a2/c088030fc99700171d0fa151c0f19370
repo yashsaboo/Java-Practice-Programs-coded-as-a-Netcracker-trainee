@@ -1,0 +1,69 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.StringTokenizer;
+
+public class KuchBhiNaam {
+
+	private int materialNo = 40;
+
+	public Object[][] MaterialArray() throws Exception {
+		String name[] = new String[materialNo];
+		String unit[] = new String[materialNo];
+		double price[] = new double[materialNo];
+		double max[] = new double[materialNo];
+		double percent[] = new double[materialNo];
+		Object material[][] = new Object[materialNo][5];
+		try {
+			String strFile = "src/CIVIL.csv";
+
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(new FileReader(strFile));
+			String strLine = "";
+			StringTokenizer st = null;
+			int counter = 0;
+
+			while ((strLine = br.readLine()) != null) {
+				st = new StringTokenizer(strLine, ",");
+
+				while (st.hasMoreTokens() && counter < materialNo) {
+						name[counter] = st.nextToken();
+						material[counter][0] = name[counter];
+
+						unit[counter] = st.nextToken();
+						material[counter][1] = unit[counter];
+
+						price[counter] = Double.parseDouble(st.nextToken());
+						material[counter][2] = (Object)price[counter];
+
+						max[counter] = Double.parseDouble(st.nextToken());
+						material[counter][3] = null;
+
+						percent[counter] = Double.parseDouble(st.nextToken());
+						material[counter][4] = null;
+
+
+					counter++;
+				}
+
+			}
+
+		} catch (Exception e) {
+			System.out.println("Exception while reading the file : " + e);
+		}
+
+		return material;
+	}
+	
+	public static void main(String[] args) throws Exception {
+		data obj = new data();
+		Object[][] x = obj.MaterialArray();
+		for(int i=0; i<obj.materialNo;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				System.out.println(x[i][j]);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<product>
+    <id>1000</id>
+    <name>Laptop</name>
+    <quantity>20</quantity>
+    <price>35000</price>
+</product>

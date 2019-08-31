@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;DAAA&apos;&#x0D;&#x0A;- Original project: &apos;DAAA&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Lab6.Queue.java&#x0D;&#x0A;     Lab6.QueueNode.java&#x0D;&#x0A;     Lab6.TestForOptimalMerge.java&#x0D;&#x0A;     Lab6.TreeNode.java" description="Delete elements" element1="/src&lt;Lab6{Queue.java" element2="/src&lt;Lab6{QueueNode.java" element3="/src&lt;Lab6{TreeNode.java" element4="/src&lt;Lab6{TestForOptimalMerge.java" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1509728079859" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchma"
+	targetNamespace="http://www.example.org/product" xmlns:tns="https://www.example.org/product"
+	elementFormDefault="qualified">
+
+	<element name="product">
+		<complextType>
+			<sequence>
+				<element name="name" type="string">
+					<simpleType>
+						<restriction>
+							<pattern value="^[A-za-z ]{4,}"></pattern>
+						</restriction>
+					</simpleType>
+				</element>
+				<element name="price" type="string"></element>
+				<element name="qty" type="string">
+					<simpleType>
+						<restriction>
+							<minInclusive value="0"></minInclusive>
+							<maxInclusive value="500"></maxInclusive>
+						</restriction>
+					</simpleType>
+				</element>
+				<element name="category">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="Electronics"/>
+							<enumeration value="Food"/>
+							<enumeration value="Fashion"/>
+						</restriction>
+					</simpleType>
+				</element>
+			</sequence>
+		</complextType>
+	</element>
+
+</xs:schema>

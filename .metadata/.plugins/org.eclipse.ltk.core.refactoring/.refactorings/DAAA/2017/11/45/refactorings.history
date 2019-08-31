@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;min&apos; in &apos;Lab8.Knapsack.sort(...)&apos; to &apos;max&apos;&#x0D;&#x0A;- Original project: &apos;DAAA&apos;&#x0D;&#x0A;- Original element: &apos;Lab8.Knapsack.sort(int, int[], int[]).min&apos;&#x0D;&#x0A;- Renamed element: &apos;min&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;min&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;Lab8{Knapsack.java[Knapsack~sort~I~\[I~\[I@min!570!579!574!576!I!0!false" name="max" references="true" stamp="1509849852339" version="1.0"/>
+</session>
